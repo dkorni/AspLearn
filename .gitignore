@@ -16,3 +16,5 @@ Services.CreateOwnServices/bin/
 Services.ConfigureServices/bin/
 Services.PassDependencies/bin/
 Services.PassDependencies/obj/
+Services.LifeCircle/obj/
+Services.LifeCircle/bin/
