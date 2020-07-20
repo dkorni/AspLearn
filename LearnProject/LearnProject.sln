@@ -9,9 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "explosive_homeless_bot_2", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter_2_Basics", "Chapter_2_Basics", "{21AFFB01-74BA-4379-8BE5-5D8635635437}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorProcessing", "..\ErrorProcessing\ErrorProcessing.csproj", "{2A7804B0-CB51-4D76-9047-E41B83E73E57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErrorProcessing", "..\ErrorProcessing\ErrorProcessing.csproj", "{2A7804B0-CB51-4D76-9047-E41B83E73E57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTTPS", "..\HTTPS\HTTPS.csproj", "{19581E0B-639C-469B-BF58-56AB12C2A519}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTTPS", "..\HTTPS\HTTPS.csproj", "{19581E0B-639C-469B-BF58-56AB12C2A519}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter_3_DI", "Chapter_3_DI", "{57FE9F6A-F73F-4536-B4B3-FC8A8606ADD8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.ConfigureServices", "..\Services.ConfigureServices\Services.ConfigureServices.csproj", "{436184C4-149B-446B-9035-38D1F4C16B86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.CreateOwnServices", "..\Services.CreateOwnServices\Services.CreateOwnServices.csproj", "{FB36B44D-B26C-45B6-B225-DF81D76908A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +41,14 @@ Global
 		{19581E0B-639C-469B-BF58-56AB12C2A519}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19581E0B-639C-469B-BF58-56AB12C2A519}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19581E0B-639C-469B-BF58-56AB12C2A519}.Release|Any CPU.Build.0 = Release|Any CPU
+		{436184C4-149B-446B-9035-38D1F4C16B86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{436184C4-149B-446B-9035-38D1F4C16B86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{436184C4-149B-446B-9035-38D1F4C16B86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{436184C4-149B-446B-9035-38D1F4C16B86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB36B44D-B26C-45B6-B225-DF81D76908A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB36B44D-B26C-45B6-B225-DF81D76908A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB36B44D-B26C-45B6-B225-DF81D76908A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB36B44D-B26C-45B6-B225-DF81D76908A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +56,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{2A7804B0-CB51-4D76-9047-E41B83E73E57} = {21AFFB01-74BA-4379-8BE5-5D8635635437}
 		{19581E0B-639C-469B-BF58-56AB12C2A519} = {21AFFB01-74BA-4379-8BE5-5D8635635437}
+		{436184C4-149B-446B-9035-38D1F4C16B86} = {57FE9F6A-F73F-4536-B4B3-FC8A8606ADD8}
+		{FB36B44D-B26C-45B6-B225-DF81D76908A4} = {57FE9F6A-F73F-4536-B4B3-FC8A8606ADD8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {202068A2-3058-4974-831F-4CA3D959E848}

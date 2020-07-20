@@ -10,3 +10,7 @@ LearnProject/.vs/
 ErrorProcessing/bin/
 HTTPS/obj/
 HTTPS/bin/
+Services.ConfigureServices/obj/
+Services.CreateOwnServices/obj/
+Services.CreateOwnServices/bin/
+Services.ConfigureServices/bin/
