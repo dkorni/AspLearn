@@ -14,3 +14,5 @@ Services.ConfigureServices/obj/
 Services.CreateOwnServices/obj/
 Services.CreateOwnServices/bin/
 Services.ConfigureServices/bin/
+Services.PassDependencies/bin/
+Services.PassDependencies/obj/
