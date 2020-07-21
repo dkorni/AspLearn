@@ -20,3 +20,7 @@ Services.LifeCircle/obj/
 Services.LifeCircle/bin/
 Services.Middleware/obj/
 Services.Middleware/bin/
+Services.Singletone.Scope/obj/Debug/netcoreapp3.1/staticwebassets/Services.Singletone.Scope.StaticWebAssets.Manifest.cache
+Services.Singletone.Scope/bin/Debug/netcoreapp3.1/Services.Singletone.Scope.runtimeconfig.json
+Services.Singletone.Scope/obj/Debug/netcoreapp3.1/Services.Singletone.Scope.pdb
+Services.Singletone.Scope/obj/
