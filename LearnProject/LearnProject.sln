@@ -17,11 +17,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter_3_DI", "Chapter_3_D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.ConfigureServices", "..\Services.ConfigureServices\Services.ConfigureServices.csproj", "{436184C4-149B-446B-9035-38D1F4C16B86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.CreateOwnServices", "..\Services.CreateOwnServices\Services.CreateOwnServices.csproj", "{FB36B44D-B26C-45B6-B225-DF81D76908A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.CreateOwnServices", "..\Services.CreateOwnServices\Services.CreateOwnServices.csproj", "{FB36B44D-B26C-45B6-B225-DF81D76908A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.PassDependencies", "..\Services.PassDependencies\Services.PassDependencies.csproj", "{2BB67A5F-AEDA-424B-B343-84F04B6D33F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.PassDependencies", "..\Services.PassDependencies\Services.PassDependencies.csproj", "{2BB67A5F-AEDA-424B-B343-84F04B6D33F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.LifeCircle", "..\Services.LifeCircle\Services.LifeCircle.csproj", "{2C5DEBE5-9D0B-4372-B56D-B88DAFA58F65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.LifeCircle", "..\Services.LifeCircle\Services.LifeCircle.csproj", "{2C5DEBE5-9D0B-4372-B56D-B88DAFA58F65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Middleware", "..\Services.Middleware\Services.Middleware.csproj", "{E5068462-3A6D-4139-AE82-89F310D574D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,10 @@ Global
 		{2C5DEBE5-9D0B-4372-B56D-B88DAFA58F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C5DEBE5-9D0B-4372-B56D-B88DAFA58F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C5DEBE5-9D0B-4372-B56D-B88DAFA58F65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5068462-3A6D-4139-AE82-89F310D574D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5068462-3A6D-4139-AE82-89F310D574D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5068462-3A6D-4139-AE82-89F310D574D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5068462-3A6D-4139-AE82-89F310D574D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +78,7 @@ Global
 		{FB36B44D-B26C-45B6-B225-DF81D76908A4} = {57FE9F6A-F73F-4536-B4B3-FC8A8606ADD8}
 		{2BB67A5F-AEDA-424B-B343-84F04B6D33F4} = {57FE9F6A-F73F-4536-B4B3-FC8A8606ADD8}
 		{2C5DEBE5-9D0B-4372-B56D-B88DAFA58F65} = {57FE9F6A-F73F-4536-B4B3-FC8A8606ADD8}
+		{E5068462-3A6D-4139-AE82-89F310D574D2} = {57FE9F6A-F73F-4536-B4B3-FC8A8606ADD8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {202068A2-3058-4974-831F-4CA3D959E848}

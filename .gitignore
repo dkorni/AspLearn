@@ -18,3 +18,5 @@ Services.PassDependencies/bin/
 Services.PassDependencies/obj/
 Services.LifeCircle/obj/
 Services.LifeCircle/bin/
+Services.Middleware/obj/
+Services.Middleware/bin/
