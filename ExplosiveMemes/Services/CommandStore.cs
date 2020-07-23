@@ -21,13 +21,13 @@ namespace ExplosiveMemes
         /// <param name="commandName">Name of the command.</param>
         /// <param name="command">The command.</param>
         /// <returns></returns>
-        public bool TryToGet(string commandName, out Command command)
+        public bool TryToGet(string commandName, out ICommand command)
         {
             var result = _commands.TryGetValue(commandName, out Type commandType);
 
-            if(commandType != null)
+            if (commandType != null)
                 // create instance of command
-                command = (Command)Activator.CreateInstance(commandType);
+                command = (ICommand)Activator.CreateInstance(commandType);
             else
             {
                 // nothing
@@ -45,10 +45,10 @@ namespace ExplosiveMemes
             var assembly = Assembly.GetExecutingAssembly();
 
             // load all command types
-            var commandTypes = assembly.GetTypes().Where(t => t.BaseType == typeof(Command));
+            var commandTypes = assembly.GetTypes().Where(t => t.GetInterface("ICommand") != null);
 
             // make dictionary
-            _commands = commandTypes.ToDictionary(t => t.Name, t => t);
+            _commands = commandTypes.ToDictionary(t => t.GetProperty("Name").GetValue(null).ToString(), t => t);
         }
     }
 }
