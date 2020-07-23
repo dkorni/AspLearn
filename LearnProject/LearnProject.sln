@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Middleware", "..\S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Singletone.Scope", "..\Services.Singletone.Scope\Services.Singletone.Scope.csproj", "{EDC7A6FC-E61D-42EF-9047-42118AAAA2DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExplosiveMemes", "..\ExplosiveMemes\ExplosiveMemes.csproj", "{542F17B7-21BE-4B7F-855A-3884D34FB57A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Practice", "Practice", "{BFF40ADA-0CFF-49DD-ACA8-34E0FC40FD7F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +71,10 @@ Global
 		{EDC7A6FC-E61D-42EF-9047-42118AAAA2DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDC7A6FC-E61D-42EF-9047-42118AAAA2DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDC7A6FC-E61D-42EF-9047-42118AAAA2DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{542F17B7-21BE-4B7F-855A-3884D34FB57A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{542F17B7-21BE-4B7F-855A-3884D34FB57A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{542F17B7-21BE-4B7F-855A-3884D34FB57A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{542F17B7-21BE-4B7F-855A-3884D34FB57A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +88,7 @@ Global
 		{2C5DEBE5-9D0B-4372-B56D-B88DAFA58F65} = {57FE9F6A-F73F-4536-B4B3-FC8A8606ADD8}
 		{E5068462-3A6D-4139-AE82-89F310D574D2} = {57FE9F6A-F73F-4536-B4B3-FC8A8606ADD8}
 		{EDC7A6FC-E61D-42EF-9047-42118AAAA2DB} = {57FE9F6A-F73F-4536-B4B3-FC8A8606ADD8}
+		{542F17B7-21BE-4B7F-855A-3884D34FB57A} = {BFF40ADA-0CFF-49DD-ACA8-34E0FC40FD7F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {202068A2-3058-4974-831F-4CA3D959E848}

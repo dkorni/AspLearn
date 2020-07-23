@@ -24,3 +24,6 @@ Services.Singletone.Scope/obj/Debug/netcoreapp3.1/staticwebassets/Services.Singl
 Services.Singletone.Scope/bin/Debug/netcoreapp3.1/Services.Singletone.Scope.runtimeconfig.json
 Services.Singletone.Scope/obj/Debug/netcoreapp3.1/Services.Singletone.Scope.pdb
 Services.Singletone.Scope/obj/
+ExplosiveMemes/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+ExplosiveMemes/bin/
+ExplosiveMemes/obj/
