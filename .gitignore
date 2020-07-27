@@ -27,3 +27,7 @@ Services.Singletone.Scope/obj/
 ExplosiveMemes/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
 ExplosiveMemes/bin/
 ExplosiveMemes/obj/
+Configuration.Default/obj/
+Configurations.Basics/bin/
+Configuration.Default/bin/
+Configurations.Basics/obj/

@@ -21,13 +21,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.PassDependencies",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.LifeCircle", "..\Services.LifeCircle\Services.LifeCircle.csproj", "{2C5DEBE5-9D0B-4372-B56D-B88DAFA58F65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Middleware", "..\Services.Middleware\Services.Middleware.csproj", "{E5068462-3A6D-4139-AE82-89F310D574D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.Middleware", "..\Services.Middleware\Services.Middleware.csproj", "{E5068462-3A6D-4139-AE82-89F310D574D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Singletone.Scope", "..\Services.Singletone.Scope\Services.Singletone.Scope.csproj", "{EDC7A6FC-E61D-42EF-9047-42118AAAA2DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.Singletone.Scope", "..\Services.Singletone.Scope\Services.Singletone.Scope.csproj", "{EDC7A6FC-E61D-42EF-9047-42118AAAA2DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExplosiveMemes", "..\ExplosiveMemes\ExplosiveMemes.csproj", "{542F17B7-21BE-4B7F-855A-3884D34FB57A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExplosiveMemes", "..\ExplosiveMemes\ExplosiveMemes.csproj", "{542F17B7-21BE-4B7F-855A-3884D34FB57A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Practice", "Practice", "{BFF40ADA-0CFF-49DD-ACA8-34E0FC40FD7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter_4_Configuration", "Chapter_4_Configuration", "{1B1ABF5A-08F1-4A79-BA24-214062FB1900}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configurations.Basics", "..\Configurations.Basics\Configurations.Basics.csproj", "{703CB9F1-75C2-43C7-85E4-B8290A50C42B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configuration.Default", "..\Configuration.Default\Configuration.Default.csproj", "{1EEF6ABB-5FB5-447D-B8AF-B969CB846CD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +81,14 @@ Global
 		{542F17B7-21BE-4B7F-855A-3884D34FB57A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{542F17B7-21BE-4B7F-855A-3884D34FB57A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{542F17B7-21BE-4B7F-855A-3884D34FB57A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{703CB9F1-75C2-43C7-85E4-B8290A50C42B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{703CB9F1-75C2-43C7-85E4-B8290A50C42B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{703CB9F1-75C2-43C7-85E4-B8290A50C42B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{703CB9F1-75C2-43C7-85E4-B8290A50C42B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EEF6ABB-5FB5-447D-B8AF-B969CB846CD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EEF6ABB-5FB5-447D-B8AF-B969CB846CD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EEF6ABB-5FB5-447D-B8AF-B969CB846CD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EEF6ABB-5FB5-447D-B8AF-B969CB846CD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,6 +103,8 @@ Global
 		{E5068462-3A6D-4139-AE82-89F310D574D2} = {57FE9F6A-F73F-4536-B4B3-FC8A8606ADD8}
 		{EDC7A6FC-E61D-42EF-9047-42118AAAA2DB} = {57FE9F6A-F73F-4536-B4B3-FC8A8606ADD8}
 		{542F17B7-21BE-4B7F-855A-3884D34FB57A} = {BFF40ADA-0CFF-49DD-ACA8-34E0FC40FD7F}
+		{703CB9F1-75C2-43C7-85E4-B8290A50C42B} = {1B1ABF5A-08F1-4A79-BA24-214062FB1900}
+		{1EEF6ABB-5FB5-447D-B8AF-B969CB846CD2} = {1B1ABF5A-08F1-4A79-BA24-214062FB1900}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {202068A2-3058-4974-831F-4CA3D959E848}
