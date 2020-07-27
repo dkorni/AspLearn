@@ -9,18 +9,21 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Configuration.Default
+namespace NotFileConfiguration.Memory
 {
     public class Startup
     {
-        public IConfiguration AppConfiguration { get; set; }
+        public IConfiguration Configuration { get; set; }
 
-        public Startup(IConfiguration appConfiguration)
+        public Startup()
         {
-            // default configuration contains few providers
-            // if it contains few provider with same keys,
-            // value of last provider will be picked out
-            AppConfiguration = appConfiguration;
+            var builder = new ConfigurationBuilder().AddInMemoryCollection(new Dictionary<string, string>()
+            {
+                ["color"] = "blue",
+                ["text"] = "Ja molod i krasiv"
+            });
+
+            Configuration = builder.Build();
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -39,11 +42,14 @@ namespace Configuration.Default
 
             app.UseRouting();
 
+            var color = Configuration["color"];
+            var text = Configuration["text"];
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapGet("/", async context =>
                 {
-                    await context.Response.WriteAsync("Hello World!");
+                    await context.Response.WriteAsync($"<p style='color:{color};'>{text}</p>");
                 });
             });
         }

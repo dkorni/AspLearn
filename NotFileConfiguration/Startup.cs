@@ -9,18 +9,18 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Configuration.Default
+namespace NotFileConfiguration
 {
     public class Startup
     {
-        public IConfiguration AppConfiguration { get; set; }
+        public IConfiguration Configuration { get; set; }
 
-        public Startup(IConfiguration appConfiguration)
+        public Startup()
         {
-            // default configuration contains few providers
-            // if it contains few provider with same keys,
-            // value of last provider will be picked out
-            AppConfiguration = appConfiguration;
+            // simulate passing params to command line
+            string[] args = { "Name=Alice", "Age=18"};
+            var builder = new ConfigurationBuilder().AddCommandLine(args);
+            Configuration = builder.Build();
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -30,8 +30,11 @@ namespace Configuration.Default
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IConfiguration configuration)
         {
+            // simulate
+            // configuration = Configuration;
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -43,7 +46,7 @@ namespace Configuration.Default
             {
                 endpoints.MapGet("/", async context =>
                 {
-                    await context.Response.WriteAsync("Hello World!");
+                    await context.Response.WriteAsync(configuration["Name"] + " " + configuration["Age"]);
                 });
             });
         }

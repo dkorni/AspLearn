@@ -31,3 +31,9 @@ Configuration.Default/obj/
 Configurations.Basics/bin/
 Configuration.Default/bin/
 Configurations.Basics/obj/
+NotFileConfiguration.EnvironmentVariables/bin/
+NotFileConfiguration.EnvironmentVariables/obj/
+NotFileConfiguration/obj/
+NotFileConfiguration.Memory/obj/
+NotFileConfiguration.Memory/bin/
+NotFileConfiguration/bin/

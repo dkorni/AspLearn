@@ -9,18 +9,18 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Configuration.Default
+namespace NotFileConfiguration.EnvironmentVariables
 {
     public class Startup
     {
-        public IConfiguration AppConfiguration { get; set; }
+        public IConfiguration Configuration { get; set; }
 
-        public Startup(IConfiguration appConfiguration)
+        public Startup(IConfiguration configuration)
         {
-            // default configuration contains few providers
-            // if it contains few provider with same keys,
-            // value of last provider will be picked out
-            AppConfiguration = appConfiguration;
+            Configuration = configuration;
+
+            // explicitly adding environment config
+            // Configuration = new ConfigurationBuilder().AddEnvironmentVariables().Build();
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -32,6 +32,8 @@ namespace Configuration.Default
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            var javaDir = Configuration["JAVA_HOME"] ?? "not set";
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -43,7 +45,7 @@ namespace Configuration.Default
             {
                 endpoints.MapGet("/", async context =>
                 {
-                    await context.Response.WriteAsync("Hello World!");
+                    await context.Response.WriteAsync(javaDir);
                 });
             });
         }
