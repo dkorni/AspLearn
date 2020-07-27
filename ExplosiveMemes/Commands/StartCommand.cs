@@ -15,7 +15,7 @@ namespace ExplosiveMemes.Commands
         {
             var client = await Bot.Get();
 
-            await ApiProvider.DisplayMenu(message.Chat.Id, "Здорова братишь, пить будешь?", true, "Да", "Нет");
+            await ApiProvider.DisplayMenu(message.Chat.Id, "Здорова братишь, пить будешь🍾?", true, "Да", "Нет");
 
             //client.SendChatActionAsync(message.Chat.Id)
         }

@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using ExplosiveMemes.Commands;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace ExplosiveMemes
 {
     public class CommandStore
     {
         private Dictionary<string, Type> _commands = new Dictionary<string, Type>();
+        private IServiceProvider _serviceProvider;
 
-        public CommandStore()
+        public CommandStore(IServiceProvider serviceProvider)
         {
+            _serviceProvider = serviceProvider;
             LoadCommandTypes();
         }
 
@@ -25,9 +29,26 @@ namespace ExplosiveMemes
         {
             var result = _commands.TryGetValue(commandName, out Type commandType);
 
+            var services = new List<object>();
+
             if (commandType != null)
+            {
+                var ctrParams = commandType.GetConstructors().FirstOrDefault()?.GetParameters();
+                if (ctrParams != null && ctrParams?.Length != 0)
+                {
+                    // so it is services we need to get them
+                    foreach (var param in ctrParams)
+                    {
+                        var paramType = param.ParameterType;
+                        var service = _serviceProvider.GetService(paramType);
+                        services.Add(service);
+                    }
+
+                }
+
                 // create instance of command
-                command = (ICommand)Activator.CreateInstance(commandType);
+                command = (ICommand) Activator.CreateInstance(commandType, services.ToArray());
+            }
             else
             {
                 // nothing
