@@ -1,0 +1,5 @@
+{
+  "color": "red",
+  "text": "Religion is the opium of the people.",
+  "namespace": {"class": {"method":"AddJson"} } 
+}

@@ -37,3 +37,14 @@ NotFileConfiguration/obj/
 NotFileConfiguration.Memory/obj/
 NotFileConfiguration.Memory/bin/
 NotFileConfiguration/bin/
+Cookies/obj/
+Cookies/bin/
+FileConfiguration.INI/bin/
+FileConfiguration.INI/obj/
+FileConfiguration.XML/bin/
+FileConfiguration.XML/obj/
+FileConfiguration/bin/
+FileConfiguration/obj/
+Session/obj/Debug/
+Session/bin/
+Session/obj/
