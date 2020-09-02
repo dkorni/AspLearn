@@ -1,4 +1,5 @@
 using ExplosiveMemes.Services;
+using ExplosiveMemes.Services.Hosting;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -23,6 +24,9 @@ namespace ExplosiveMemes
             services.AddControllers().AddNewtonsoftJson();
             services.AddSingleton<PhraseStore>();
             services.AddSingleton<CommandStore>();
+            services.AddSingleton<BearService>();
+            services.AddSingleton<ImageProcessor>();
+            //services.AddHostedService<SayHiService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

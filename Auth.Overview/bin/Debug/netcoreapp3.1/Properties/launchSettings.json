@@ -1,11 +1,10 @@
 ﻿{
-  "$schema": "http://json.schemastore.org/launchsettings.json",
   "iisSettings": {
-    "windowsAuthentication": false,
-    "anonymousAuthentication": true,
+    "windowsAuthentication": false, 
+    "anonymousAuthentication": true, 
     "iisExpress": {
-      "applicationUrl": "http://localhost:60498",
-      "sslPort": 44346
+      "applicationUrl": "http://localhost:58556",
+      "sslPort": 44380
     }
   },
   "profiles": {
@@ -16,10 +15,10 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "ExplosiveMemes": {
+    "Auth.Overview": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:7001;http://localhost:7000",
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

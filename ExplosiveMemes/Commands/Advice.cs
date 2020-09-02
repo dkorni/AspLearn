@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Threading.Tasks;
 using ExplosiveMemes.Services;
+using NLog;
 using Telegram.Bot.Types;
 
 namespace ExplosiveMemes.Commands
 {
     public class Advice : ICommand
     {
+        private Logger logger = LogManager.GetCurrentClassLogger();
+
         private PhraseStore _phraseStore;
         private Random _random = new Random();
 
@@ -23,6 +26,7 @@ namespace ExplosiveMemes.Commands
             _phraseStore.TryToGet(id, out var phrase);
             var bot = await Bot.Get();
             await bot.SendTextMessageAsync(message.Chat.Id, phrase);
+            logger.Warn($"Response to {message.Chat.Username}: {phrase}");
         }
     }
 }
