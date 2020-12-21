@@ -1,0 +1,15 @@
+﻿@page
+@model RazorPagesEmpty.Pages.ExchangeModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Currency";
+}
+
+<h2>
+    @Model.Message
+</h2>
+
+<form method="post">
+    <input type="number" name="sum" />
+    <input type="submit" name="Send" />
+</form>

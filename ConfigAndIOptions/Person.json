@@ -1,0 +1,13 @@
+{
+  "name": "Tom",
+  "age": 20,
+  "languages": [
+    "English",
+    "German",
+    "Slovensky"
+  ],
+  "company": {
+    "title": "Microsoft",
+    "country": "USA" 
+  } 
+}

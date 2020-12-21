@@ -1,0 +1,4 @@
+﻿cat
+Markiza
+age
+9
