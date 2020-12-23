@@ -1,0 +1,19 @@
+Now listening on: https://localhost:5001
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: D:\My_files\Study\dotNet\Core\ASP\OwnLogProvider
+/
+Information: Now listening on: https://localhost:5001
+Information: Now listening on: http://localhost:5000
+Information: Application started. Press Ctrl+C to shut down.
+Information: Hosting environment: Development
+Information: Content root path: D:\My_files\Study\dotNet\Core\ASP\OwnLogProvider
+Information: /
+Information: Application is shutting down...
+Information: Now listening on: https://localhost:5001
+Information: Now listening on: http://localhost:5000
+Information: Application started. Press Ctrl+C to shut down.
+Information: Hosting environment: Development
+Information: Content root path: D:\My_files\Study\dotNet\Core\ASP\OwnLogProvider
+Information: /
